@@ -28,12 +28,12 @@ class TestPalindrome(unittest.TestCase):
         self.assertFalse(is_palindrome("This is not a palindrome"))
         self.assertFalse(is_palindrome("palindrome"))
     
-    #def test_edge_cases(self):
-    #    """Pruebas para casos especiales"""
-    #    self.assertTrue(is_palindrome(""))  # Cadena vacía
-    #    self.assertTrue(is_palindrome("a"))  # Un solo carácter
-    #    self.assertTrue(is_palindrome("A"))  # Un solo carácter mayúscula
-    #    self.assertTrue(is_palindrome(" "))  # Solo espacio
-    #    self.assertTrue(is_palindrome(".,"))  # Solo puntuación
+    def test_edge_cases(self):
+        """Pruebas para casos especiales"""
+        self.assertTrue(is_palindrome(""))  # Cadena vacía
+        self.assertTrue(is_palindrome("a"))  # Un solo carácter
+        self.assertTrue(is_palindrome("A"))  # Un solo carácter mayúscula
+        self.assertTrue(is_palindrome(" "))  # Solo espacio
+        self.assertTrue(is_palindrome(".,"))  # Solo puntuación
 if __name__ == '__main__':
     unittest.main()
