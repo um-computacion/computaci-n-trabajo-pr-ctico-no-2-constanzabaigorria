@@ -21,12 +21,12 @@ class TestPalindrome(unittest.TestCase):
         self.assertTrue(is_palindrome("No lemon, no melon"))
         self.assertTrue(is_palindrome("Anita lava la tina"))
     
-    #def test_non_palindromes(self):
-    #    """Pruebas para no palíndromos"""
-    #   self.assertFalse(is_palindrome("hello"))
-    #   self.assertFalse(is_palindrome("python"))
-   #    self.assertFalse(is_palindrome("This is not a palindrome"))
-     #  self.assertFalse(is_palindrome("palindrome"))
+    def test_non_palindromes(self):
+        """Pruebas para no palíndromos"""
+        self.assertFalse(is_palindrome("hello"))
+        self.assertFalse(is_palindrome("python"))
+        self.assertFalse(is_palindrome("This is not a palindrome"))
+        self.assertFalse(is_palindrome("palindrome"))
     
     #def test_edge_cases(self):
     #    """Pruebas para casos especiales"""
